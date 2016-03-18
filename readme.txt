@@ -3,8 +3,8 @@ Contributors: webvitaly
 Donate link: http://web-profile.com.ua/donate/
 Tags: filename, sanitize, media, upload, cyrillic, ukrainian, russian, belorussian, german, french, polish, spanish, hungarian, czech, greek
 Requires at least: 3.0
-Tested up to: 4.1
-Stable tag: 2.0
+Tested up to: 5.0
+Stable tag: 2.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -12,9 +12,10 @@ Sanitize filenames to latin during upload.
 
 == Description ==
 
-> **[WordPress Pro plugins](http://codecanyon.net/popular_item/by_category?category=wordpress&ref=webvitaly)** |
+> **[Silver Bullet Pro](http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii "Speedup and protect WordPress in a smart way")** |
 > **[Filenames to latin](http://web-profile.com.ua/wordpress/plugins/filenames-to-latin/ "Plugin page")** |
-> **[Donate](http://web-profile.com.ua/donate/ "Support the development")**
+> **[Donate](http://web-profile.com.ua/donate/ "Support the development")** |
+> **[GitHub](https://github.com/webvitalii/filenames-to-latin "Fork")**
 
 
 Plugin sanitizes cyrillic (Ukrainian, Russian, Belorussian), German, French, Polish, Spanish, Hungarian, Czech, Greek, Swedish and other filenames to latin characters during upload.
@@ -25,9 +26,8 @@ Plugin converts filenames to lowercase automatically.
 
 
 = Useful: =
-* ["Anti-spam" - block spam in comments](http://wordpress.org/plugins/anti-spam/ "no spam, no captcha")
-* ["Page-list" - show list of pages with shortcodes](http://wordpress.org/plugins/page-list/ "list of pages with shortcodes")
-* [WordPress Pro plugins](http://codecanyon.net/popular_item/by_category?category=wordpress&ref=webvitaly)
+* **[Silver Bullet Pro - Speedup and protect WordPress in a smart way](http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii "Speedup and protect WordPress in a smart way")**
+* **[Anti-spam Pro - Block spam in comments](http://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii "Block spam in comments")**
 
 
 == Screenshots ==
@@ -36,6 +36,10 @@ Plugin converts filenames to lowercase automatically.
 
 
 == Changelog ==
+
+= 2.1 - 2016-03-18 =
+* Minor changes and code refactoring
+* Published plugin to GitHub
 
 = 2.0 - 2014-01-30 =
 * rewrite the plugin's code completely

@@ -3,7 +3,7 @@
 Plugin Name: Filenames to latin
 Plugin URI: http://wordpress.org/plugins/filenames-to-latin/
 Description: Sanitize Cyrillic, German, French, Polish, Spanish, Hungarian, Czech, Greek, Swedish and other filenames to latin during upload.
-Version: 2.0
+Version: 2.1
 Author: webvitaly
 Author URI: http://web-profile.com.ua/wordpress/plugins/
 License: GPLv3
@@ -92,7 +92,7 @@ if( ! function_exists( 'filenames_to_latin_unqprfx' ) ) :
 			'/Ώ/' => 'o', '/Ϊ/' => 'i', '/Ϋ/' => 'y',
 			'/ώ/' => 'o', '/ς/' => 's', '/ΐ/' => 'i', '/ϊ/' => 'i', '/ϋ/' => 'y', '/ΰ/' => 'y',
 
-			// Extra all (http://www.atm.ox.ac.uk/user/iwi/charmap.html)
+			// Extra chars (http://www.atm.ox.ac.uk/user/iwi/charmap.html)
 			'/À/' => 'a', '/Á/' => 'a', '/Â/' => 'a', '/Ã/' => 'a', '/Å/' => 'a',
 			'/à/' => 'a', '/á/' => 'a', '/â/' => 'a', '/ã/' => 'a', '/å/' => 'a',
 
@@ -118,7 +118,7 @@ if( ! function_exists( 'filenames_to_latin_unqprfx' ) ) :
 
 		);
 
-		// rewrite some chars for some languages
+		// override some chars for some languages
 		$locale = get_locale();
 		switch ( $locale ) {
 			case 'uk_UA': // Ukrainian
@@ -158,19 +158,23 @@ if( ! function_exists( 'filenames_to_latin_unqprfx' ) ) :
 
 		$friendly_filename = preg_replace( array_keys( $chars_table ), array_values( $chars_table ), $filename ); // replace original chars in filename with friendly chars
 
-		return strtolower( $friendly_filename ); // filename to lowercase
+		return strtolower( $friendly_filename );
 	}
 	add_filter( 'sanitize_file_name', 'filenames_to_latin_unqprfx', 10 );
 endif;
 
 
 if( ! function_exists( 'filenames_to_latin_unqprfx_plugin_meta' ) ) :
-	function filenames_to_latin_unqprfx_plugin_meta( $links, $file ) { // add 'Plugin page' and 'Donate' links to plugin meta row
-		if ( strpos( $file, 'filenames-to-latin.php' ) !== false ) {
-			$links = array_merge( $links, array( '<a href="http://web-profile.com.ua/wordpress/plugins/filenames-to-latin/" title="Plugin page">' . __('Filenames to latin') . '</a>' ) );
-			$links = array_merge( $links, array( '<a href="http://web-profile.com.ua/donate/" title="Support the development">' . __('Donate') . '</a>' ) );
+	function filenames_to_latin_unqprfx_plugin_meta( $links, $file ) { // add links to plugin meta row
+		if ( $file == plugin_basename( __FILE__ ) ) {
+			$row_meta = array(
+				'support' => '<a href="http://web-profile.com.ua/wordpress/plugins/filenames-to-latin/" target="_blank"><span class="dashicons dashicons-editor-help"></span> ' . __( 'Filenames to latin', 'filenames-to-latin' ) . '</a>',
+				'donate' => '<a href="http://web-profile.com.ua/donate/" target="_blank"><span class="dashicons dashicons-heart"></span> ' . __( 'Donate', 'filenames-to-latin' ) . '</a>',
+				'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way"><span class="dashicons dashicons-star-filled"></span> ' . __( 'Silver Bullet Pro', 'filenames-to-latin' ) . '</a>'
+			);
+			$links = array_merge( $links, $row_meta );
 		}
-		return $links;
+		return (array) $links;
 	}
 	add_filter( 'plugin_row_meta', 'filenames_to_latin_unqprfx_plugin_meta', 10, 2 );
 endif;

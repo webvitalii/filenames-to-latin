@@ -37,11 +37,11 @@ if( ! function_exists( 'filenames_to_latin_unqprfx' ) ) :
 			// Ukrainian
 			'/Ґ/' => 'g', '/Є/' => 'ye', '/І/' => 'i', '/Ї/' => 'yi',
 			'/ґ/' => 'g', '/є/' => 'ye', '/і/' => 'i', '/ї/' => 'yi',
-			
+
 			// Russian
 			'/Ё/' => 'yo', '/Ы/' => 'y', '/Ъ/' => '', '/Э/' => 'e',
 			'/ё/' => 'yo', '/ы/' => 'y', '/ъ/' => '', '/э/' => 'e',
-			
+
 			// Belorussian
 			'/Ў/' => 'u',
 			'/ў/' => 'u',
@@ -49,7 +49,7 @@ if( ! function_exists( 'filenames_to_latin_unqprfx' ) ) :
 			// German
 			'/Ä/' => 'ae', '/Ö/' => 'oe', '/Ü/' => 'ue', '/ß/' => 'ss',
 			'/ä/' => 'ae', '/ö/' => 'oe', '/ü/' => 'ue',
-			
+
 			// Polish
 			'/Ą/' => 'a', '/Ć/' => 'c', '/Ę/' => 'e', '/Ł/' => 'l', '/Ń/' => 'n',
 			'/ą/' => 'a', '/ć/' => 'c', '/ę/' => 'e', '/ł/' => 'l', '/ń/' => 'n',
@@ -168,9 +168,9 @@ if( ! function_exists( 'filenames_to_latin_unqprfx_plugin_meta' ) ) :
 	function filenames_to_latin_unqprfx_plugin_meta( $links, $file ) { // add links to plugin meta row
 		if ( $file == plugin_basename( __FILE__ ) ) {
 			$row_meta = array(
-				'support' => '<a href="http://web-profile.com.ua/wordpress/plugins/filenames-to-latin/" target="_blank"><span class="dashicons dashicons-editor-help"></span> ' . __( 'Filenames to latin', 'filenames-to-latin' ) . '</a>',
-				'donate' => '<a href="http://web-profile.com.ua/donate/" target="_blank"><span class="dashicons dashicons-heart"></span> ' . __( 'Donate', 'filenames-to-latin' ) . '</a>',
-				'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way"><span class="dashicons dashicons-star-filled"></span> ' . __( 'Silver Bullet Pro', 'filenames-to-latin' ) . '</a>'
+				'support' => '<a href="http://web-profile.com.ua/wordpress/plugins/filenames-to-latin/" target="_blank"> ' . __( 'Filenames to latin', 'filenames-to-latin' ) . '</a>',
+				'donate' => '<a href="http://web-profile.com.ua/donate/" target="_blank"> ' . __( 'Donate', 'filenames-to-latin' ) . '</a>',
+				'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way"> ' . __( 'Silver Bullet Pro', 'filenames-to-latin' ) . '</a>'
 			);
 			$links = array_merge( $links, $row_meta );
 		}

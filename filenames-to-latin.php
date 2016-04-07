@@ -168,9 +168,9 @@ if( ! function_exists( 'filenames_to_latin_unqprfx_plugin_meta' ) ) :
 	function filenames_to_latin_unqprfx_plugin_meta( $links, $file ) { // add links to plugin meta row
 		if ( $file == plugin_basename( __FILE__ ) ) {
 			$row_meta = array(
-				'support' => '<a href="http://web-profile.com.ua/wordpress/plugins/filenames-to-latin/" target="_blank"> ' . __( 'Filenames to latin', 'filenames-to-latin' ) . '</a>',
-				'donate' => '<a href="http://web-profile.com.ua/donate/" target="_blank"> ' . __( 'Donate', 'filenames-to-latin' ) . '</a>',
-				'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way"> ' . __( 'Silver Bullet Pro', 'filenames-to-latin' ) . '</a>'
+				'support' => '<a href="http://web-profile.com.ua/wordpress/plugins/filenames-to-latin/" target="_blank">' . __( 'Filenames to latin', 'filenames-to-latin' ) . '</a>',
+				'donate' => '<a href="http://web-profile.com.ua/donate/" target="_blank">' . __( 'Donate', 'filenames-to-latin' ) . '</a>',
+				'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way">' . __( 'Silver Bullet Pro', 'filenames-to-latin' ) . '</a>'
 			);
 			$links = array_merge( $links, $row_meta );
 		}

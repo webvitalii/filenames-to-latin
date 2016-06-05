@@ -1,10 +1,10 @@
 === Filenames to latin ===
 Contributors: webvitaly
-Donate link: http://web-profile.com.ua/donate/
-Tags: filename, sanitize, media, upload, cyrillic, ukrainian, russian, belorussian, german, french, polish, spanish, hungarian, czech, greek
+Donate link: http://web-profile.net/donate/
+Tags: filename, sanitize, media, upload, cyrillic, ukrainian, russian, belorussian, german, french, polish, spanish, hungarian, czech, greek, swedish, finnish
 Requires at least: 3.0
 Tested up to: 5.0
-Stable tag: 2.1
+Stable tag: 2.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -13,12 +13,12 @@ Sanitize filenames to latin during upload.
 == Description ==
 
 > **[Silver Bullet Pro](http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii "Speedup and protect WordPress in a smart way")** |
-> **[Filenames to latin](http://web-profile.com.ua/wordpress/plugins/filenames-to-latin/ "Plugin page")** |
-> **[Donate](http://web-profile.com.ua/donate/ "Support the development")** |
+> **[Filenames to latin](http://web-profile.net/wordpress/plugins/filenames-to-latin/ "Plugin page")** |
+> **[Donate](http://web-profile.net/donate/ "Support the development")** |
 > **[GitHub](https://github.com/webvitalii/filenames-to-latin "Fork")**
 
 
-Plugin sanitizes cyrillic (Ukrainian, Russian, Belorussian), German, French, Polish, Spanish, Hungarian, Czech, Greek, Swedish and other filenames to latin characters during upload.
+Plugin sanitizes cyrillic (Ukrainian, Russian, Belorussian), German, French, Polish, Spanish, Hungarian, Czech, Greek, Swedish, Finnish and other filenames to latin characters during upload.
 Plugin converts filenames to lowercase automatically.
 
 = List of sanitizing letters: =
@@ -36,6 +36,10 @@ Plugin converts filenames to lowercase automatically.
 
 
 == Changelog ==
+
+= 2.2 - 2016-06-05 =
+* Added support for Finnish language (thanks to Subsup - http://wordpress.org/support/profile/subsup )
+* Minor refactoring
 
 = 2.1 - 2016-03-18 =
 * Minor changes and code refactoring

@@ -69,6 +69,10 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 		'/Ň/' => 'n', '/Ú/' => 'u', '/Ů/' => 'u',
 		'/ň/' => 'n', '/ú/' => 'u', '/ů/' => 'u',
 
+		// Slovak
+		'/Ĺ/' => 'l', '/Ľ/' => 'l', '/Ŕ/' => 'r',
+		'/ĺ/' => 'l', '/ľ/' => 'l', '/ŕ/' => 'r',		
+		
 		// Greek alphabet & modern polytonic characters
 		'/Α/' => 'a', '/Β/' => 'v', '/Γ/' => 'g', '/Δ/' => 'd', '/Ε/' => 'e',
 		'/α/' => 'a', '/β/' => 'v', '/γ/' => 'g', '/δ/' => 'd', '/ε/' => 'e',

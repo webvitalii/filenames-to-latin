@@ -2,10 +2,10 @@
 /*
 Plugin Name: Filenames to latin
 Plugin URI: http://wordpress.org/plugins/filenames-to-latin/
-Description: Sanitize Cyrillic, German, French, Polish, Spanish, Hungarian, Czech, Greek, Swedish, Finnish and other filenames to latin during upload.
-Version: 2.2
+Description: Sanitize Cyrillic, German, French, Polish, Spanish, Hungarian, Czech, Greek, Swedish, Finnish, Latvian and other filenames to latin during upload.
+Version: 2.3
 Author: webvitaly
-Author URI: http://web-profile.com.ua/wordpress/plugins/
+Author URI: http://web-profile.net/wordpress/plugins/
 License: GPLv3
 */
 
@@ -69,6 +69,15 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 		'/Ň/' => 'n', '/Ú/' => 'u', '/Ů/' => 'u',
 		'/ň/' => 'n', '/ú/' => 'u', '/ů/' => 'u',
 
+		// Latvian
+		'/Ā/' => 'aa', '/Ē/' => 'ee', '/Ū/' => 'uu', '/Ī/' => 'ii',
+		'/ā/' => 'aa', '/ē/' => 'ee', '/ū/' => 'uu', '/ī/' => 'ii',
+		'/Ō/' => 'o', '/Ŗ/' => 'r', '/Ģ/' => 'g',
+		'/ō/' => 'o', '/ŗ/' => 'r', '/ģ/' => 'g',
+		'/Ķ/' => 'k', '/Ļ/' => 'l',
+		'/ķ/' => 'k', '/ļ/' => 'l', 
+		'/Ņ/' => 'n', '/ņ/' => 'n',
+		
 		// Greek alphabet & modern polytonic characters
 		'/Α/' => 'a', '/Β/' => 'v', '/Γ/' => 'g', '/Δ/' => 'd', '/Ε/' => 'e',
 		'/α/' => 'a', '/β/' => 'v', '/γ/' => 'g', '/δ/' => 'd', '/ε/' => 'e',
@@ -151,6 +160,18 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 				'/щ/' => 'sht',
 				'/Ъ/' => 'a',
 				'/ъ/' => 'a'
+			);
+			$chars_table = array_merge( $chars_table, $chars_table_ext );
+			break;
+		case 'lv_LV': // Latvian
+		case 'lv_lv':
+			$chars_table_ext = array(
+				'/Š/' => 'sh',
+				'/š/' => 'sh',
+				'/Ž/' => 'zh',
+				'/ž/' => 'zh',
+				'/Č/' => 'ch',
+				'/č/' => 'ch'
 			);
 			$chars_table = array_merge( $chars_table, $chars_table_ext );
 			break;

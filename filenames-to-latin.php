@@ -2,8 +2,8 @@
 /*
 Plugin Name: Filenames to latin
 Plugin URI: http://wordpress.org/plugins/filenames-to-latin/
-Description: Sanitize Cyrillic, German, French, Polish, Spanish, Hungarian, Czech, Greek, Swedish, Finnish, Latvian and other filenames to latin during upload.
-Version: 2.4
+Description: Sanitize Cyrillic, German, French, Polish, Spanish, Hungarian, Czech, Greek, Swedish, Finnish, Latvian, Estonian, Mongolian and other filenames to latin during upload.
+Version: 2.5
 Author: webvitaly
 Author URI: http://web-profile.net/wordpress/plugins/
 License: GPLv3
@@ -184,6 +184,35 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 				'/ö/' => 'o',
 				'/Ü/' => 'u',
 				'/ü/' => 'u'
+			);
+			$chars_table = array_merge( $chars_table, $chars_table_ext );
+			break;
+		case 'mn': // Mongolian
+			$chars_table_ext = array(
+				'/Е/' => 'ye',
+				'/е/' => 'ye',
+				'/Ё/' => 'yo',
+				'/ё/' => 'yo',
+				'/Ж/' => 'j',
+				'/ж/' => 'j',
+				'/Й/' => 'i',
+				'/й/' => 'i',
+				'/Х/' => 'kh',
+				'/х/' => 'kh',
+				'/Ъ/' => 'i',
+				'/ъ/' => 'i',
+				'/Ь/' => 'i',
+				'/ь/' => 'i',
+				'/Ц/' => 'ts',
+				'/ц/' => 'ts',
+				'/Ю/' => 'yu',
+				'/ю/' => 'yu',
+				'/Я/' => 'ya',
+				'/я/' => 'ya',
+				'/Ө/' => 'o',
+				'/ө/' => 'o',
+				'/Ү/' => 'u',
+				'/ү/' => 'u'
 			);
 			$chars_table = array_merge( $chars_table, $chars_table_ext );
 			break;

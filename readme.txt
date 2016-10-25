@@ -1,10 +1,10 @@
 === Filenames to latin ===
 Contributors: webvitaly
 Donate link: http://web-profile.net/donate/
-Tags: filename, sanitize, media, upload, cyrillic, ukrainian, russian, belorussian, german, french, polish, spanish, hungarian, czech, greek, swedish, finnish, latvian, estonian
+Tags: filename, sanitize, media, upload, cyrillic, ukrainian, russian, belorussian, german, french, polish, spanish, hungarian, czech, greek, swedish, finnish, latvian, estonian, mongolian
 Requires at least: 3.0
 Tested up to: 5.0
-Stable tag: 2.4
+Stable tag: 2.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -36,6 +36,9 @@ Plugin converts filenames to lowercase automatically.
 
 
 == Changelog ==
+
+= 2.5 - 2016-10-25 =
+* Added support for Mongolian language (thanks to Jeremy Skelton)
 
 = 2.4 - 2016-10-20 =
 * Added support for Estonian language (thanks to Madis - https://profiles.wordpress.org/madis )

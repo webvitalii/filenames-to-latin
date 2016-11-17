@@ -1,7 +1,7 @@
 === Filenames to latin ===
 Contributors: webvitaly
 Donate link: http://web-profile.net/donate/
-Tags: filename, sanitize, media, upload, cyrillic, ukrainian, russian, belorussian, german, french, polish, spanish, hungarian, czech, greek, swedish, finnish, latvian, estonian, mongolian
+Tags: filename, sanitize, media, upload, cyrillic, ukrainian, russian, belorussian, german, french, polish, spanish, hungarian, czech, slovak, greek, swedish, finnish, latvian, estonian, mongolian
 Requires at least: 3.0
 Tested up to: 5.0
 Stable tag: 2.5
@@ -18,7 +18,7 @@ Sanitize filenames to latin during upload.
 > **[GitHub](https://github.com/webvitalii/filenames-to-latin "Fork")**
 
 
-Plugin sanitizes cyrillic (Ukrainian, Russian, Belorussian), German, French, Polish, Spanish, Hungarian, Czech, Greek, Swedish, Finnish, Latvian, Estonian and other filenames to latin characters during upload.
+Plugin sanitizes cyrillic (Ukrainian, Russian, Belorussian), German, French, Polish, Spanish, Hungarian, Czech, Slovak, Greek, Swedish, Finnish, Latvian, Estonian and other filenames to latin characters during upload.
 Plugin converts filenames to lowercase automatically.
 
 = List of sanitizing letters: =
@@ -37,8 +37,10 @@ Plugin converts filenames to lowercase automatically.
 
 == Changelog ==
 
-= 2.5 - 2016-10-25 =
+= 2.5 - 2016-11-17 =
 * Added support for Mongolian language (thanks to Jeremy Skelton)
+* Added support for Slovak language (thanks to Corneliuscz)
+* Bugfixing and adding new special chars
 
 = 2.4 - 2016-10-20 =
 * Added support for Estonian language (thanks to Madis - https://profiles.wordpress.org/madis)

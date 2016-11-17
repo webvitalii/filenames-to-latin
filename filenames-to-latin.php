@@ -2,7 +2,7 @@
 /*
 Plugin Name: Filenames to latin
 Plugin URI: https://wordpress.org/plugins/filenames-to-latin/
-Description: Sanitize Cyrillic, German, French, Polish, Spanish, Hungarian, Czech, Greek, Swedish, Finnish, Latvian, Estonian, Mongolian and other filenames to latin during upload.
+Description: Sanitize Cyrillic, German, French, Polish, Spanish, Hungarian, Czech, Slovak, Greek, Swedish, Finnish, Latvian, Estonian, Mongolian and other filenames to latin during upload.
 Version: 2.5
 Author: webvitaly
 Author URI: http://web-profile.net/wordpress/plugins/
@@ -78,6 +78,10 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 		'/ķ/' => 'k', '/ļ/' => 'l',
 		'/Ņ/' => 'n', '/ņ/' => 'n',
 
+		// Slovak
+		'/Ĺ/' => 'l', '/Ľ/' => 'l', '/Ŕ/' => 'r',
+		'/ĺ/' => 'l', '/ľ/' => 'l', '/ŕ/' => 'r',
+
 		// Greek alphabet & modern polytonic characters
 		'/Α/' => 'a', '/Β/' => 'v', '/Γ/' => 'g', '/Δ/' => 'd', '/Ε/' => 'e',
 		'/α/' => 'a', '/β/' => 'v', '/γ/' => 'g', '/δ/' => 'd', '/ε/' => 'e',
@@ -145,8 +149,6 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 		case 'sv_se':
 		case 'fi': // Finnish
 			$chars_table_ext = array(
-				'/Å/' => 'a',
-				'/å/' => 'a',
 				'/Ä/' => 'a',
 				'/ä/' => 'a',
 				'/Ö/' => 'o',

@@ -6,7 +6,7 @@ Requires at least: 3.0
 Tested up to: 5.0
 Stable tag: 2.5
 License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl.html
+License URI: https://www.gnu.org/licenses/gpl.html
 
 Sanitize filenames to latin during upload.
 
@@ -41,13 +41,13 @@ Plugin converts filenames to lowercase automatically.
 * Added support for Mongolian language (thanks to Jeremy Skelton)
 
 = 2.4 - 2016-10-20 =
-* Added support for Estonian language (thanks to Madis - https://profiles.wordpress.org/madis )
+* Added support for Estonian language (thanks to Madis - https://profiles.wordpress.org/madis)
 
 = 2.3 - 2016-10-16 =
 * Added support for Latvian language (thanks to Degi)
 
 = 2.2 - 2016-06-05 =
-* Added support for Finnish language (thanks to Subsup - http://wordpress.org/support/profile/subsup )
+* Added support for Finnish language (thanks to Subsup - https://wordpress.org/support/profile/subsup)
 * Minor refactoring
 
 = 2.1 - 2016-03-18 =
@@ -58,7 +58,7 @@ Plugin converts filenames to lowercase automatically.
 * rewrite the plugin's code completely
 * combine 2 arrays of letters into 1 associative array for easier updating
 * add exceptions for some languages
-* added Swedish letters (thanks to Leah - http://wordpress.org/support/profile/gezan )
+* added Swedish letters (thanks to Leah - https://wordpress.org/support/profile/gezan)
 
 = 1.8 - 2014-01-08 =
 * added Greek letters (thanks to senortiago)

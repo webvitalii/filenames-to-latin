@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Filenames to latin
-Plugin URI: http://wordpress.org/plugins/filenames-to-latin/
+Plugin URI: https://wordpress.org/plugins/filenames-to-latin/
 Description: Sanitize Cyrillic, German, French, Polish, Spanish, Hungarian, Czech, Greek, Swedish, Finnish, Latvian, Estonian, Mongolian and other filenames to latin during upload.
 Version: 2.5
 Author: webvitaly
@@ -36,11 +36,11 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 		// Ukrainian
 		'/Ґ/' => 'g', '/Є/' => 'ye', '/І/' => 'i', '/Ї/' => 'yi',
 		'/ґ/' => 'g', '/є/' => 'ye', '/і/' => 'i', '/ї/' => 'yi',
-		
+
 		// Russian
 		'/Ё/' => 'yo', '/Ы/' => 'y', '/Ъ/' => '', '/Э/' => 'e',
 		'/ё/' => 'yo', '/ы/' => 'y', '/ъ/' => '', '/э/' => 'e',
-		
+
 		// Belorussian
 		'/Ў/' => 'u',
 		'/ў/' => 'u',
@@ -48,7 +48,7 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 		// German
 		'/Ä/' => 'ae', '/Ö/' => 'oe', '/Ü/' => 'ue', '/ß/' => 'ss',
 		'/ä/' => 'ae', '/ö/' => 'oe', '/ü/' => 'ue',
-		
+
 		// Polish
 		'/Ą/' => 'a', '/Ć/' => 'c', '/Ę/' => 'e', '/Ł/' => 'l', '/Ń/' => 'n',
 		'/ą/' => 'a', '/ć/' => 'c', '/ę/' => 'e', '/ł/' => 'l', '/ń/' => 'n',
@@ -75,9 +75,9 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 		'/Ō/' => 'o', '/Ŗ/' => 'r', '/Ģ/' => 'g',
 		'/ō/' => 'o', '/ŗ/' => 'r', '/ģ/' => 'g',
 		'/Ķ/' => 'k', '/Ļ/' => 'l',
-		'/ķ/' => 'k', '/ļ/' => 'l', 
+		'/ķ/' => 'k', '/ļ/' => 'l',
 		'/Ņ/' => 'n', '/ņ/' => 'n',
-		
+
 		// Greek alphabet & modern polytonic characters
 		'/Α/' => 'a', '/Β/' => 'v', '/Γ/' => 'g', '/Δ/' => 'd', '/Ε/' => 'e',
 		'/α/' => 'a', '/β/' => 'v', '/γ/' => 'g', '/δ/' => 'd', '/ε/' => 'e',

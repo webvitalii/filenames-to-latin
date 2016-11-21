@@ -107,6 +107,7 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 		// Extra chars (http://www.atm.ox.ac.uk/user/iwi/charmap.html)
 		'/À/' => 'a', '/Á/' => 'a', '/Â/' => 'a', '/Ã/' => 'a', '/Å/' => 'a',
 		'/à/' => 'a', '/á/' => 'a', '/â/' => 'a', '/ã/' => 'a', '/å/' => 'a',
+		'/å/' => 'a', '/Å/' => 'a',
 
 		'/Æ/' => 'ae', '/Ç/' => 'c', '/È/' => 'e', '/É/' => 'e', '/Ê/' => 'e',
 		'/æ/' => 'ae', '/ç/' => 'c', '/è/' => 'e', '/é/' => 'e', '/ê/' => 'e',

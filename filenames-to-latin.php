@@ -232,9 +232,9 @@ add_filter( 'sanitize_file_name', 'filenames_to_latin_plugin_sanitize', 10 );
 function filenames_to_latin_plugin_row_meta( $links, $file ) { // add links to plugin meta row
 	if ( $file == plugin_basename( __FILE__ ) ) {
 		$row_meta = array(
-			'support' => '<a href="http://web-profile.net/wordpress/plugins/filenames-to-latin/" target="_blank"><span class="dashicons dashicons-editor-help"></span> ' . __( 'Filenames to latin', 'filenames-to-latin' ) . '</a>',
-			'donate' => '<a href="http://web-profile.net/donate/" target="_blank"><span class="dashicons dashicons-heart"></span> ' . __( 'Donate', 'filenames-to-latin' ) . '</a>',
-			'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way"><span class="dashicons dashicons-star-filled"></span> ' . __( 'Silver Bullet Pro', 'filenames-to-latin' ) . '</a>'
+			'support' => '<a href="http://web-profile.net/wordpress/plugins/filenames-to-latin/" target="_blank">' . __( 'Filenames to latin', 'filenames-to-latin' ) . '</a>',
+			'donate' => '<a href="http://web-profile.net/donate/" target="_blank">' . __( 'Donate', 'filenames-to-latin' ) . '</a>',
+			'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way">' . __( 'Silver Bullet Pro', 'filenames-to-latin' ) . '</a>'
 		);
 		$links = array_merge( $links, $row_meta );
 	}

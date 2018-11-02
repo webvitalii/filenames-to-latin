@@ -2,8 +2,8 @@
 /*
 Plugin Name: Filenames to latin
 Plugin URI: https://wordpress.org/plugins/filenames-to-latin/
-Description: Sanitize Cyrillic, German, French, Polish, Spanish, Hungarian, Czech, Slovak, Greek, Swedish, Finnish, Latvian, Estonian, Mongolian and other filenames to latin during upload.
-Version: 2.5
+Description: Sanitize Cyrillic (Ukrainian, Russian, Belorussian), German, French, Polish, Spanish, Hungarian, Czech, Slovak, Greek, Swedish, Finnish, Latvian, Estonian, Mongolian, Bosnian, Croatian, Serbian, Montenegrin and other filenames to latin during upload.
+Version: 2.6
 Author: webvitaly
 Author URI: http://web-profile.net/wordpress/plugins/
 License: GPLv3
@@ -81,6 +81,10 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 		// Slovak
 		'/Ĺ/' => 'l', '/Ľ/' => 'l', '/Ŕ/' => 'r',
 		'/ĺ/' => 'l', '/ľ/' => 'l', '/ŕ/' => 'r',
+		
+		// Bosnian, Croatian, Serbian, Montenegrin
+		'/Đ/' => 'dj',
+		'/đ/' => 'dj',
 
 		// Greek alphabet & modern polytonic characters
 		'/Α/' => 'a', '/Β/' => 'v', '/Γ/' => 'g', '/Δ/' => 'd', '/Ε/' => 'e',
@@ -233,7 +237,7 @@ function filenames_to_latin_plugin_row_meta( $links, $file ) { // add links to p
 		$row_meta = array(
 			'support' => '<a href="http://web-profile.net/wordpress/plugins/filenames-to-latin/" target="_blank"><span class="dashicons dashicons-editor-help"></span> ' . __( 'Filenames to latin', 'filenames-to-latin' ) . '</a>',
 			'donate' => '<a href="http://web-profile.net/donate/" target="_blank"><span class="dashicons dashicons-heart"></span> ' . __( 'Donate', 'filenames-to-latin' ) . '</a>',
-			'pro' => '<a href="http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii" target="_blank" title="Speedup and protect WordPress in a smart way"><span class="dashicons dashicons-star-filled"></span> ' . __( 'Silver Bullet Pro', 'filenames-to-latin' ) . '</a>'
+			'pro' => '<a href="https://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii" target="_blank" title="Blocks spam in comments section"><span class="dashicons dashicons-star-filled"></span> ' . __( 'Anti-spam Pro', 'filenames-to-latin' ) . '</a>'
 		);
 		$links = array_merge( $links, $row_meta );
 	}

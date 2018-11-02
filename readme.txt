@@ -1,10 +1,10 @@
 === Filenames to latin ===
 Contributors: webvitaly
 Donate link: http://web-profile.net/donate/
-Tags: filename, sanitize, media, upload, cyrillic, ukrainian, russian, belorussian, german, french, polish, spanish, hungarian, czech, slovak, greek, swedish, finnish, latvian, estonian, mongolian
+Tags: filename, sanitize, media, upload, cyrillic, ukrainian, russian, belorussian, german, french, polish, spanish, hungarian, czech, slovak, greek, swedish, finnish, latvian, estonian, mongolian, bosnian, croatian, serbian, montenegrin
 Requires at least: 3.0
-Tested up to: 5.0
-Stable tag: 2.5
+Tested up to: 5.1
+Stable tag: 2.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.html
 
@@ -12,22 +12,22 @@ Sanitize filenames to latin during upload.
 
 == Description ==
 
-> **[Silver Bullet Pro](http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii "Speedup and protect WordPress in a smart way")** |
+> **[Anti-spam Pro](https://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii "Blocks spam in comments section")** |
 > **[Filenames to latin](http://web-profile.net/wordpress/plugins/filenames-to-latin/ "Plugin page")** |
 > **[Donate](http://web-profile.net/donate/ "Support the development")** |
 > **[GitHub](https://github.com/webvitalii/filenames-to-latin "Fork")**
 
 
-Plugin sanitizes cyrillic (Ukrainian, Russian, Belorussian), German, French, Polish, Spanish, Hungarian, Czech, Slovak, Greek, Swedish, Finnish, Latvian, Estonian and other filenames to latin characters during upload.
+Plugin sanitizes Cyrillic (Ukrainian, Russian, Belorussian), German, French, Polish, Spanish, Hungarian, Czech, Slovak, Greek, Swedish, Finnish, Latvian, Estonian, Mongolian, Bosnian, Croatian, Serbian, Montenegrin and other filenames to latin characters during upload.
 Plugin converts filenames to lowercase automatically.
 
 = List of sanitizing letters: =
-а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ь ю я ґ є і ї ё ы ъ э ў ą ć ę ł ń ó ś ź ż à á â ã ä å æ ç è é ê ë ì í î ï ð ñ ò ó ô õ ö × ø ù ú û ü ý þ ÿ ß ő ű ě š č ř ž ý á é ď ť ň ú ů α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ τ υ φ χ ψ ω ά έ ή ί ό ύ ώ ς ΐ ϊ ϋ ΰ.
+а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ь ю я ґ є і ї ё ы ъ э ў ą ć ę ł ń ó ś ź ż à á â ã ä å æ ç è é ê ë ì í î ï ð ñ ò ó ô õ ö × ø ù ú û ü ý þ ÿ ß ő ű ě š č ř ž ý á é ď ť ň ú ů α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ τ υ φ χ ψ ω ά έ ή ί ό ύ ώ ς ΐ ϊ ϋ ΰ đ.
 
 
 = Useful: =
 * **[Silver Bullet Pro - Speedup and protect WordPress in a smart way](http://codecanyon.net/item/silver-bullet-pro/15171769?ref=webvitalii "Speedup and protect WordPress in a smart way")**
-* **[Anti-spam Pro - Block spam in comments](http://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii "Block spam in comments")**
+* **[Anti-spam Pro - Block spam in comments](http://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii "Blocks spam in comments")**
 
 
 == Screenshots ==
@@ -36,6 +36,9 @@ Plugin converts filenames to lowercase automatically.
 
 
 == Changelog ==
+
+= 2.6 - 2018-11-02 =
+* Added special character used in Bosnian, Croatian, Serbian and Montenegrin languages (thanks to Apsolut - https://profiles.wordpress.org/apsolut)
 
 = 2.5 - 2016-11-17 =
 * Added support for Mongolian language (thanks to Jeremy Skelton)

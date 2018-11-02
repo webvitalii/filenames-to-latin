@@ -111,6 +111,7 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 		// Extra chars (http://www.atm.ox.ac.uk/user/iwi/charmap.html)
 		'/À/' => 'a', '/Á/' => 'a', '/Â/' => 'a', '/Ã/' => 'a', '/Å/' => 'a',
 		'/à/' => 'a', '/á/' => 'a', '/â/' => 'a', '/ã/' => 'a', '/å/' => 'a',
+		'/å/' => 'a', '/Å/' => 'a',
 
 		'/Æ/' => 'ae', '/Ç/' => 'c', '/È/' => 'e', '/É/' => 'e', '/Ê/' => 'e',
 		'/æ/' => 'ae', '/ç/' => 'c', '/è/' => 'e', '/é/' => 'e', '/ê/' => 'e',
@@ -235,9 +236,9 @@ add_filter( 'sanitize_file_name', 'filenames_to_latin_plugin_sanitize', 10 );
 function filenames_to_latin_plugin_row_meta( $links, $file ) { // add links to plugin meta row
 	if ( $file == plugin_basename( __FILE__ ) ) {
 		$row_meta = array(
-			'support' => '<a href="http://web-profile.net/wordpress/plugins/filenames-to-latin/" target="_blank"><span class="dashicons dashicons-editor-help"></span> ' . __( 'Filenames to latin', 'filenames-to-latin' ) . '</a>',
-			'donate' => '<a href="http://web-profile.net/donate/" target="_blank"><span class="dashicons dashicons-heart"></span> ' . __( 'Donate', 'filenames-to-latin' ) . '</a>',
-			'pro' => '<a href="https://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii" target="_blank" title="Blocks spam in comments section"><span class="dashicons dashicons-star-filled"></span> ' . __( 'Anti-spam Pro', 'filenames-to-latin' ) . '</a>'
+			'support' => '<a href="http://web-profile.net/wordpress/plugins/filenames-to-latin/" target="_blank">' . __( 'Filenames to latin', 'filenames-to-latin' ) . '</a>',
+			'donate' => '<a href="http://web-profile.net/donate/" target="_blank">' . __( 'Donate', 'filenames-to-latin' ) . '</a>',
+			'pro' => '<a href="https://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii" target="_blank" title="Blocks spam in comments section">' . __( 'Anti-spam Pro', 'filenames-to-latin' ) . '</a>'
 		);
 		$links = array_merge( $links, $row_meta );
 	}

@@ -3,7 +3,7 @@
 Plugin Name: Filenames to latin
 Plugin URI: https://wordpress.org/plugins/filenames-to-latin/
 Description: Sanitize Cyrillic (Ukrainian, Russian, Belorussian), German, French, Polish, Spanish, Hungarian, Czech, Slovak, Greek, Swedish, Finnish, Latvian, Estonian, Mongolian, Bosnian, Croatian, Serbian, Montenegrin and other filenames to latin during upload.
-Version: 2.6
+Version: 2.7
 Author: webvitaly
 Author URI: http://web-profile.net/wordpress/plugins/
 License: GPLv3
@@ -45,19 +45,25 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 		'/Ў/' => 'u',
 		'/ў/' => 'u',
 
-		// German
-		'/Ä/' => 'ae', '/Ö/' => 'oe', '/Ü/' => 'ue', '/ß/' => 'ss',
-		'/ä/' => 'ae', '/ö/' => 'oe', '/ü/' => 'ue',
-
 		// Polish
 		'/Ą/' => 'a', '/Ć/' => 'c', '/Ę/' => 'e', '/Ł/' => 'l', '/Ń/' => 'n',
 		'/ą/' => 'a', '/ć/' => 'c', '/ę/' => 'e', '/ł/' => 'l', '/ń/' => 'n',
 		'/Ó/' => 'o', '/Ś/' => 's', '/Ź/' => 'z', '/Ż/' => 'z',
 		'/ó/' => 'o', '/ś/' => 's', '/ź/' => 'z', '/ż/' => 'z',
 
+		// Swedish, Finnish, Hungarian, Estonian
+		'/Ä/' => 'a',
+		'/ä/' => 'a',
+		'/Ö/' => 'o',
+		'/ö/' => 'o',
+		'/Ü/' => 'u',
+		'/ü/' => 'u'
+
 		// Hungarian
-		'/Ő/' => 'o', '/Ű/' => 'u',
-		'/ő/' => 'o', '/ű/' => 'u',
+		'/Ő/' => 'o',
+		'/ő/' => 'o',
+		'/Ű/' => 'u',
+		'/ű/' => 'u',
 
 		// Czech
 		'/Ě/' => 'e', '/Š/' => 's', '/Č/' => 'c', '/Ř/' => 'r', '/Ž/' => 'z',
@@ -150,17 +156,6 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 			);
 			$chars_table = array_merge( $chars_table, $chars_table_ext );
 			break;
-		case 'sv_SE': // Swedish
-		case 'sv_se':
-		case 'fi': // Finnish
-			$chars_table_ext = array(
-				'/Ä/' => 'a',
-				'/ä/' => 'a',
-				'/Ö/' => 'o',
-				'/ö/' => 'o'
-			);
-			$chars_table = array_merge( $chars_table, $chars_table_ext );
-			break;
 		case 'bg_BG': // Bulgarian
 		case 'bg_bg':
 			$chars_table_ext = array(
@@ -181,17 +176,6 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 				'/ž/' => 'zh',
 				'/Č/' => 'ch',
 				'/č/' => 'ch'
-			);
-			$chars_table = array_merge( $chars_table, $chars_table_ext );
-			break;
-		case 'et': // Estonian
-			$chars_table_ext = array(
-				'/Ä/' => 'a',
-				'/ä/' => 'a',
-				'/Ö/' => 'o',
-				'/ö/' => 'o',
-				'/Ü/' => 'u',
-				'/ü/' => 'u'
 			);
 			$chars_table = array_merge( $chars_table, $chars_table_ext );
 			break;
@@ -221,6 +205,21 @@ function filenames_to_latin_plugin_sanitize( $filename ) {
 				'/ө/' => 'o',
 				'/Ү/' => 'u',
 				'/ү/' => 'u'
+			);
+			$chars_table = array_merge( $chars_table, $chars_table_ext );
+			break;
+		case 'de': // German
+		case 'de_DE':
+		case 'de_AT': // German (Austria)
+		case 'de_CH': // German (Switzerland)
+			$chars_table_ext = array(
+				'/Ä/' => 'ae',
+				'/ä/' => 'ae',
+				'/Ö/' => 'oe',
+				'/ö/' => 'oe',
+				'/Ü/' => 'ue',
+				'/ü/' => 'ue',
+				'/ß/' => 'ss'
 			);
 			$chars_table = array_merge( $chars_table, $chars_table_ext );
 			break;

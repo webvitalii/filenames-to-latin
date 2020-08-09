@@ -196,8 +196,7 @@ function filenames_to_latin_plugin_row_meta( $links, $file ) { // add links to p
 	if ( $file == plugin_basename( __FILE__ ) ) {
 		$row_meta = array(
 			'support' => '<a href="http://web-profile.net/wordpress/plugins/filenames-to-latin/" target="_blank">' . __( 'Filenames to latin', 'filenames-to-latin' ) . '</a>',
-			'donate' => '<a href="http://web-profile.net/donate/" target="_blank">' . __( 'Donate', 'filenames-to-latin' ) . '</a>',
-			'pro' => '<a href="https://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii" target="_blank" title="Blocks spam in comments section">' . __( 'Anti-spam Pro', 'filenames-to-latin' ) . '</a>'
+			'donate' => '<a href="http://web-profile.net/donate/" target="_blank">' . __( 'Donate', 'filenames-to-latin' ) . '</a>'
 		);
 		$links = array_merge( $links, $row_meta );
 	}

@@ -3,7 +3,7 @@ Contributors: webvitaly
 Donate link: http://web-profile.net/donate/
 Tags: filename, sanitize, media, upload, cyrillic, ukrainian, russian, belorussian, german, french, polish, spanish, hungarian, czech, slovak, greek, swedish, finnish, latvian, estonian, mongolian, bosnian, croatian, serbian, montenegrin
 Requires at least: 3.0
-Tested up to: 5.2
+Tested up to: 5.5
 Stable tag: 2.7
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.html
@@ -12,7 +12,7 @@ Sanitize filenames to latin during upload.
 
 == Description ==
 
-* **[Anti-spam Pro](https://codecanyon.net/item/antispam-pro/6491169?ref=webvitalii "Blocks spam in comments section")**
+* **[WordPress Pro plugins](http://web-profile.net/wordpress/plugins/ "WordPress Pro plugins")**
 * **[Filenames to latin](http://web-profile.net/wordpress/plugins/filenames-to-latin/ "Plugin page")**
 * **[Donate](http://web-profile.net/donate/ "Support the development")**
 * **[GitHub](https://github.com/webvitalii/filenames-to-latin "Fork")**
@@ -23,6 +23,12 @@ Plugin converts filenames to lowercase automatically.
 
 = List of sanitizing letters: =
 а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ь ю я ґ є і ї ё ы ъ э ў ą ć ę ł ń ó ś ź ż à á â ã ä å æ ç è é ê ë ì í î ï ð ñ ò ó ô õ ö × ø ù ú û ü ý þ ÿ ß ő ű ě š č ř ž ý á é ď ť ň ú ů α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ τ υ φ χ ψ ω ά έ ή ί ό ύ ώ ς ΐ ϊ ϋ ΰ đ.
+
+
+= Useful: =
+* ["Page-list" - show list of pages with shortcodes](http://wordpress.org/plugins/page-list/ "list of pages with shortcodes")
+* ["Iframe" - embed content](http://wordpress.org/plugins/iframe/ "embed content")
+* [WordPress Pro plugins](http://web-profile.net/wordpress/plugins/ "WordPress Pro plugins")
 
 
 == Screenshots ==
